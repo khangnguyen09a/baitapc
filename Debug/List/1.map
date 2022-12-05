@@ -1,0 +1,33 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rx_buffer                                                                         0x0161       8
+tx_buffer                                                                         0x0169      64
+_seed                                                                             0x01A9       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rx_wr_index                                                                       R5           1
+rx_rd_index                                                                       R4           1
+rx_counter                                                                        R7           1
+rx_buffer_overflow                                                                R2.0      1bit
+tx_wr_index                                                                       R6           1
+tx_rd_index                                                                       R9           1
+tx_counter                                                                        R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x00078     31
+getchar                                                                           0x00097     19
+usart_tx_isr                                                                      0x000AA     23
+putchar                                                                           0x000C1     27
+khoitao                                                                           0x000DC     49
+main                                                                              0x0010D     51
+itoa                                                                              0x00140     46
+puts                                                                              0x0016E     21
